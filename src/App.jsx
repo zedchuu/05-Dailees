@@ -1,122 +1,69 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+    <div className="flex flex-col min-h-screen bg-red-300">
+      <div className="w-full bg-purple-50">
+        <h1 className="text-3xl font-bold text-center text-fuchsia-500">
+          Dailees
+        </h1>
+      </div>
+      <div>
+        <p className=" mt-3 ml-2 text-center text-rose-100">
+          This is a daily checklist, that feeds into weekly and monthly progress
+        </p>
+      </div>
+      <div className="w-full h-full p-7 bg-amber-50">
+        <div className="flex flex-wrap justify-center gap-6 text-center">
+          <div className="w-64 h-64  bg-amber-400">
+            <h1 className="text-2xl text-blue-950">Professional Skill</h1>
+            <ul className="mt-2">
+              <li>Apply 2 per day</li>
+              <li>Relearn Coding</li>
+              <li>Create the analyst Case Study</li>
+            </ul>
+          </div>
+          <div className="w-64 h-64  bg-red-400">
+            <h1 className="text-2xl text-blue-950">Personal Skill</h1>
+            <ul className="mt-2">
+              <li>Speaking practice</li>
+              <li>Sudoku faster better</li>
+            </ul>
+          </div>
+          <div className="w-64 h-64  bg-blue-400">
+            <h1 className="text-2xl text-blue-950">Media</h1>
+            <ul className="mt-2">
+              <li>Watch Movies</li>
+              <li>Watch Series</li>
+              <li>analyze in my own word and have opinions</li>
+            </ul>
+          </div>
+          <div className="w-64 h-64  bg-amber-400">
+            <h1 className="text-2xl text-blue-950">Wellbeing</h1>
+            <ul className="mt-2">
+              <li>Weekly exercise plan accordance</li>
+              <li>Priming</li>
+            </ul>
+          </div>
+          <div className="w-64 h-64  bg-red-400">
+            <h1 className="text-2xl text-blue-950">Spiritual</h1>
+            <ul className="mt-2">
+              <li>Quran</li>
+              <li>Sunat prayer</li>
+              <li>Dzikr</li>
+            </ul>
+          </div>
+          <div className="w-64 h-64  bg-blue-400">
+            <h1 className="text-2xl text-blue-950">Reading</h1>
+            <ul className="mt-2">
+              <li>Read 5 pages</li>
+              <li>Read 1 fact/ non-fiction</li>
+              <li>Know what it is about</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      </div>
+      
+    </div>
   )
 }
 
-export default App
+export default App;
